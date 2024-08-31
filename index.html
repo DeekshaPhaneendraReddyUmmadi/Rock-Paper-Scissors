@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button onclick="openModal()">Click here to rock the game</button>
+
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="scoreboard">
+                <label for="userInput">Enter Rock, Paper, or Scissors:</label><br><br>
+                <input type="text" id="userInput" style="height: 36px; font-size: 20px; text-align: center; margin-bottom: 5px;"><br><br>
+                <button onclick="submitInput()">Submit</button>
+                <h2>Score Board <span id="state"></span> </h2>
+                <h3>Status : <span id="status"></span> </h3>
+                <p>User Score: <span id="userScore">0</span></p>
+                <p>Robo Score: <span id="roboScore">0</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
